@@ -1,0 +1,74 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "example": {
+                "environmentId": "8d9967e2f0624182b74e7690ad69ebEX",
+                "permissions": "read-only",
+                "userArn": "arn:aws:iam::123456789012:user/AnotherDemoUser"
+            },
+            "properties": {
+                "environmentId": {
+                    "description": "The ID of the environment for the environment member whose settings you want to change.",
+                    "pattern": "^[a-zA-Z0-9]{8,32}$",
+                    "type": "string"
+                },
+                "permissions": {
+                    "description": "<p>The replacement type of environment member permissions you want to associate with this environment member. Available values include:</p> <ul> <li> <p> <code>read-only</code>: Has read-only access to the environment.</p> </li> <li> <p> <code>read-write</code>: Has read-write access to the environment.</p> </li> </ul>",
+                    "enum": [
+                        "read-write",
+                        "read-only"
+                    ],
+                    "type": "string"
+                },
+                "userArn": {
+                    "description": "The Amazon Resource Name (ARN) of the environment member whose settings you want to change.",
+                    "pattern": "arn:aws:(iam|sts)::\\d+:(root|user|federated-user|assumed-role)\\/?\\S*",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "environmentId",
+                "userArn",
+                "permissions"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

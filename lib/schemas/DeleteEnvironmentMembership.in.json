@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "Action": {
+            "required": true,
+            "type": "string"
+        },
+        "Version": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "example": {
+                "environmentId": "8d9967e2f0624182b74e7690ad69ebEX",
+                "userArn": "arn:aws:iam::123456789012:user/AnotherDemoUser"
+            },
+            "properties": {
+                "environmentId": {
+                    "description": "The ID of the environment to delete the environment member from.",
+                    "pattern": "^[a-zA-Z0-9]{8,32}$",
+                    "type": "string"
+                },
+                "userArn": {
+                    "description": "The Amazon Resource Name (ARN) of the environment member to delete from the environment.",
+                    "pattern": "arn:aws:(iam|sts)::\\d+:(root|user|federated-user|assumed-role)\\/?\\S*",
+                    "type": "string"
+                }
+            },
+            "required": [
+                "environmentId",
+                "userArn"
+            ],
+            "type": "object"
+        },
+        "X_Amz_Content_Sha256": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Date": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Algorithm": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Credential": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Security_Token": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_Signature": {
+            "required": false,
+            "type": "string"
+        },
+        "X_Amz_SignedHeaders": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
