@@ -1,6 +1,6 @@
 {
     "title": "AWS Cloud9",
-    "description": "<fullname>AWS Cloud9</fullname> <p>AWS Cloud9 is a collection of tools that you can use to code, build, run, test, debug, and release software in the cloud.</p> <p>For more information about AWS Cloud9, see the <a href=\"https://docs.aws.amazon.com/cloud9/latest/user-guide\">AWS Cloud9 User Guide</a>.</p> <p>AWS Cloud9 supports these operations:</p> <ul> <li> <p> <code>CreateEnvironmentEC2</code>: Creates an AWS Cloud9 development environment, launches an Amazon EC2 instance, and then connects from the instance to the environment.</p> </li> <li> <p> <code>CreateEnvironmentMembership</code>: Adds an environment member to an environment.</p> </li> <li> <p> <code>DeleteEnvironment</code>: Deletes an environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.</p> </li> <li> <p> <code>DeleteEnvironmentMembership</code>: Deletes an environment member from an environment.</p> </li> <li> <p> <code>DescribeEnvironmentMemberships</code>: Gets information about environment members for an environment.</p> </li> <li> <p> <code>DescribeEnvironments</code>: Gets information about environments.</p> </li> <li> <p> <code>DescribeEnvironmentStatus</code>: Gets status information for an environment.</p> </li> <li> <p> <code>ListEnvironments</code>: Gets a list of environment identifiers.</p> </li> <li> <p> <code>UpdateEnvironment</code>: Changes the settings of an existing environment.</p> </li> <li> <p> <code>UpdateEnvironmentMembership</code>: Changes the settings of an existing environment member for an environment.</p> </li> </ul>",
+    "description": "AWS Cloud9 AWS Cloud9 is a collection of tools that you can use to code, build,\nrun, test, debug, and release software in the cloud.\n\nFor more information about AWS Cloud9, see the AWS Cloud9 User Guide\n[https://docs.aws.amazon.com/cloud9/latest/user-guide].\n\nAWS Cloud9 supports these operations:\n\n *   CreateEnvironmentEC2: Creates an AWS Cloud9 development environment,\n   launches an Amazon EC2 instance, and then connects from the instance to the\n   environment.\n   \n   \n *   CreateEnvironmentMembership: Adds an environment member to an environment.\n   \n   \n *   DeleteEnvironment: Deletes an environment. If an Amazon EC2 instance is\n   connected to the environment, also terminates the instance.\n   \n   \n *   DeleteEnvironmentMembership: Deletes an environment member from an\n   environment.\n   \n   \n *   DescribeEnvironmentMemberships: Gets information about environment members\n   for an environment.\n   \n   \n *   DescribeEnvironments: Gets information about environments.\n   \n   \n *   DescribeEnvironmentStatus: Gets status information for an environment.\n   \n   \n *   ListEnvironments: Gets a list of environment identifiers.\n   \n   \n *   UpdateEnvironment: Changes the settings of an existing environment.\n   \n   \n *   UpdateEnvironmentMembership: Changes the settings of an existing environment\n   member for an environment.",
     "docsUrl": "https://aws.amazon.com/cloud9/",
     "url": "https://api.apis.guru/v2/specs/amazonaws.com/cloud9/2017-09-23/swagger.json",
     "envVars": {},
@@ -20,7 +20,7 @@
                 "label": "Custom Server URL",
                 "viewClass": "TextFieldView"
             },
-            "hmac": {
+            "auth_hmac": {
                 "label": "Authorization (hmac)",
                 "viewClass": "TextFieldView",
                 "note": "Amazon Signature authorization v4"
@@ -38,7 +38,7 @@
     "actions": {
         "CreateEnvironmentEC2": {
             "main": "./lib/actions/CreateEnvironmentEC2.js",
-            "title": "Creates an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.",
+            "title": "CreateEnvironmentEC2",
             "description": "Creates an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.",
             "fields": {
                 "verbose": {
@@ -55,7 +55,7 @@
         },
         "CreateEnvironmentMembership": {
             "main": "./lib/actions/CreateEnvironmentMembership.js",
-            "title": "Adds an environment member to an AWS Cloud9 development environment.",
+            "title": "CreateEnvironmentMembership",
             "description": "Adds an environment member to an AWS Cloud9 development environment.",
             "fields": {
                 "verbose": {
@@ -72,7 +72,7 @@
         },
         "DeleteEnvironment": {
             "main": "./lib/actions/DeleteEnvironment.js",
-            "title": "Deletes an AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.",
+            "title": "DeleteEnvironment",
             "description": "Deletes an AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.",
             "fields": {
                 "verbose": {
@@ -89,7 +89,7 @@
         },
         "DeleteEnvironmentMembership": {
             "main": "./lib/actions/DeleteEnvironmentMembership.js",
-            "title": "Deletes an environment member from an AWS Cloud9 development environment.",
+            "title": "DeleteEnvironmentMembership",
             "description": "Deletes an environment member from an AWS Cloud9 development environment.",
             "fields": {
                 "verbose": {
@@ -106,7 +106,7 @@
         },
         "DescribeEnvironmentMemberships": {
             "main": "./lib/actions/DescribeEnvironmentMemberships.js",
-            "title": "Gets information about environment members for an AWS Cloud9 development environment.",
+            "title": "DescribeEnvironmentMemberships",
             "description": "Gets information about environment members for an AWS Cloud9 development environment.",
             "fields": {
                 "verbose": {
@@ -123,7 +123,7 @@
         },
         "DescribeEnvironmentStatus": {
             "main": "./lib/actions/DescribeEnvironmentStatus.js",
-            "title": "Gets status information for an AWS Cloud9 development environment.",
+            "title": "DescribeEnvironmentStatus",
             "description": "Gets status information for an AWS Cloud9 development environment.",
             "fields": {
                 "verbose": {
@@ -140,7 +140,7 @@
         },
         "DescribeEnvironments": {
             "main": "./lib/actions/DescribeEnvironments.js",
-            "title": "Gets information about AWS Cloud9 development environments.",
+            "title": "DescribeEnvironments",
             "description": "Gets information about AWS Cloud9 development environments.",
             "fields": {
                 "verbose": {
@@ -157,7 +157,7 @@
         },
         "ListEnvironments": {
             "main": "./lib/actions/ListEnvironments.js",
-            "title": "Gets a list of AWS Cloud9 development environment identifiers.",
+            "title": "ListEnvironments",
             "description": "Gets a list of AWS Cloud9 development environment identifiers.",
             "fields": {
                 "verbose": {
@@ -174,7 +174,7 @@
         },
         "UpdateEnvironment": {
             "main": "./lib/actions/UpdateEnvironment.js",
-            "title": "Changes the settings of an existing AWS Cloud9 development environment.",
+            "title": "UpdateEnvironment",
             "description": "Changes the settings of an existing AWS Cloud9 development environment.",
             "fields": {
                 "verbose": {
@@ -191,7 +191,7 @@
         },
         "UpdateEnvironmentMembership": {
             "main": "./lib/actions/UpdateEnvironmentMembership.js",
-            "title": "Changes the settings of an existing environment member for an AWS Cloud9 development environment.",
+            "title": "UpdateEnvironmentMembership",
             "description": "Changes the settings of an existing environment member for an AWS Cloud9 development environment.",
             "fields": {
                 "verbose": {

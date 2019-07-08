@@ -5,7 +5,7 @@
 A generated **flow**ground connector for the AWS Cloud9 API (version 2017-09-23).
 
 Generated from: https://api.apis.guru/v2/specs/amazonaws.com/cloud9/2017-09-23/swagger.json<br/>
-Generated at: 2019-05-07T17:35:04+03:00
+Generated at: 2019-07-08T14:12:28+03:00
 
 ## API Description
 
@@ -17,7 +17,8 @@ Supported authorization schemes:
 - API Key
 ## Actions
 
-### Creates an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.
+### CreateEnvironmentEC2
+> Creates an AWS Cloud9 development environment, launches an Amazon Elastic Compute Cloud (Amazon EC2) instance, and then connects from the instance to the environment.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -30,7 +31,8 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Adds an environment member to an AWS Cloud9 development environment.
+### CreateEnvironmentMembership
+> Adds an environment member to an AWS Cloud9 development environment.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -43,7 +45,8 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Deletes an AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.
+### DeleteEnvironment
+> Deletes an AWS Cloud9 development environment. If an Amazon EC2 instance is connected to the environment, also terminates the instance.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -56,7 +59,8 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Deletes an environment member from an AWS Cloud9 development environment.
+### DeleteEnvironmentMembership
+> Deletes an environment member from an AWS Cloud9 development environment.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -69,11 +73,12 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Gets information about environment members for an AWS Cloud9 development environment.
+### DescribeEnvironmentMemberships
+> Gets information about environment members for an AWS Cloud9 development environment.<br/>
 
 #### Input Parameters
-* `maxResults` - _optional_ - Pagination limit
-* `nextToken` - _optional_ - Pagination token
+* `maxResults` - _optional_ - Pagination limit<br/>
+* `nextToken` - _optional_ - Pagination token<br/>
 * `X-Amz-Content-Sha256` - _optional_
 * `X-Amz-Date` - _optional_
 * `X-Amz-Algorithm` - _optional_
@@ -82,20 +87,8 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Gets status information for an AWS Cloud9 development environment.
-
-#### Input Parameters
-* `Action` - _required_
-* `Version` - _required_
-* `X-Amz-Content-Sha256` - _optional_
-* `X-Amz-Date` - _optional_
-* `X-Amz-Algorithm` - _optional_
-* `X-Amz-Credential` - _optional_
-* `X-Amz-Security-Token` - _optional_
-* `X-Amz-Signature` - _optional_
-* `X-Amz-SignedHeaders` - _optional_
-
-### Gets information about AWS Cloud9 development environments.
+### DescribeEnvironmentStatus
+> Gets status information for an AWS Cloud9 development environment.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -108,20 +101,8 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Gets a list of AWS Cloud9 development environment identifiers.
-
-#### Input Parameters
-* `maxResults` - _optional_ - Pagination limit
-* `nextToken` - _optional_ - Pagination token
-* `X-Amz-Content-Sha256` - _optional_
-* `X-Amz-Date` - _optional_
-* `X-Amz-Algorithm` - _optional_
-* `X-Amz-Credential` - _optional_
-* `X-Amz-Security-Token` - _optional_
-* `X-Amz-Signature` - _optional_
-* `X-Amz-SignedHeaders` - _optional_
-
-### Changes the settings of an existing AWS Cloud9 development environment.
+### DescribeEnvironments
+> Gets information about AWS Cloud9 development environments.<br/>
 
 #### Input Parameters
 * `Action` - _required_
@@ -134,7 +115,36 @@ Supported authorization schemes:
 * `X-Amz-Signature` - _optional_
 * `X-Amz-SignedHeaders` - _optional_
 
-### Changes the settings of an existing environment member for an AWS Cloud9 development environment.
+### ListEnvironments
+> Gets a list of AWS Cloud9 development environment identifiers.<br/>
+
+#### Input Parameters
+* `maxResults` - _optional_ - Pagination limit<br/>
+* `nextToken` - _optional_ - Pagination token<br/>
+* `X-Amz-Content-Sha256` - _optional_
+* `X-Amz-Date` - _optional_
+* `X-Amz-Algorithm` - _optional_
+* `X-Amz-Credential` - _optional_
+* `X-Amz-Security-Token` - _optional_
+* `X-Amz-Signature` - _optional_
+* `X-Amz-SignedHeaders` - _optional_
+
+### UpdateEnvironment
+> Changes the settings of an existing AWS Cloud9 development environment.<br/>
+
+#### Input Parameters
+* `Action` - _required_
+* `Version` - _required_
+* `X-Amz-Content-Sha256` - _optional_
+* `X-Amz-Date` - _optional_
+* `X-Amz-Algorithm` - _optional_
+* `X-Amz-Credential` - _optional_
+* `X-Amz-Security-Token` - _optional_
+* `X-Amz-Signature` - _optional_
+* `X-Amz-SignedHeaders` - _optional_
+
+### UpdateEnvironmentMembership
+> Changes the settings of an existing environment member for an AWS Cloud9 development environment.<br/>
 
 #### Input Parameters
 * `Action` - _required_
